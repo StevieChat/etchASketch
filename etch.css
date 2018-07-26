@@ -3,8 +3,8 @@ body{
 }
 
 .main{
-    width: 500px;
-    height: 500px;
+    width: 650px;
+    height: 650px;
     background-color: lightgray;
     position: relative;
     top: 100px;
@@ -14,5 +14,5 @@ body{
 .gridSquare{
     background-color: white;
     float: left;
-    border: 1px solid black;
+    border: .25px solid black;
 }
