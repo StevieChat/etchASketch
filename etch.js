@@ -2,16 +2,25 @@ var mainDiv = document.querySelector('#mainDiv');
 
 function drawInitialGrid(){
 
-    for(var i = 0; i < 16; i++){
-        var div = document.createElement("DIV");
+    for(var y = 0; y < 16; y++){
+        for(var x = 0; x < 16; x++){
+            var div = document.createElement('DIV');
 
-        mainDiv.appendChild(div);
-        div.style.backgroundColor = "blue";
-        div.style.height = 700/16 + "px";
-        div.style.width = 700/16 + "px";
-        div.style.display = 'inline-block';
+            mainDiv.appendChild(div);
+            div.className += 'gridSquare'
+            div.style.height = (500/16)-2 + "px";
+            div.style.width = (500/16)-2 + "px";
+        }
     }
 
+}
+
+function getHeight(squares){
+    return (500/squares)-2;
+}
+
+function getWidth(){
+    return (500/squares)-2;
 }
 
 drawInitialGrid();

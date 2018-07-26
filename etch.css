@@ -1,8 +1,18 @@
+body{
+    background-color: #ba2b1b;
+}
+
 .main{
-    width: 700px;
-    height: 700px;
+    width: 500px;
+    height: 500px;
     background-color: lightgray;
     position: relative;
-    top: 50px;
-    left: 50px;
+    top: 100px;
+    left: 200px;
+}
+
+.gridSquare{
+    background-color: white;
+    float: left;
+    border: 1px solid black;
 }
