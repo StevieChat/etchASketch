@@ -1,5 +1,7 @@
 var mainDiv = document.querySelector('#mainDiv');
 var size = 16;
+var height = getHeight(size);
+var width = getWidth(size);
 
 function drawGrid(size){
 
@@ -9,18 +11,18 @@ function drawGrid(size){
 
             mainDiv.appendChild(div);
             div.className += 'gridSquare'
-            div.style.height = (500/size)-2 + "px";
-            div.style.width = (500/size)-2 + "px";
+            div.style.height = height + 'px';
+            div.style.width = width + 'px';
         }
     }
 
 }
 
 function getHeight(squares){
-    return (500/squares)-2;
+     return (500/squares)-2;
 }
 
-function getWidth(){
+function getWidth(squares){
     return (500/squares)-2;
 }
 
