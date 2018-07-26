@@ -1,6 +1,7 @@
 var mainDiv = document.querySelector('#mainDiv');
 var size = 16;
 
+document.addEventListener('mouseover', changeColor, false);
 
 function drawGrid(size){
 
@@ -15,22 +16,18 @@ function drawGrid(size){
             div.className += 'gridSquare'
             div.style.height = height + 'px';
             div.style.width = width + 'px';
-            div.addEventListener('mouseleave', () => {
-                div.style.backgroundColor = 'lightgray';
-            });
         }
     }
 }
 
-
-
-function getHeight(squares){
-     return (650/squares)-.5;
+function changeColor(e){
+    if(e.target.classList.contains('gridSquare')){
+        e.target.style.backgroundColor = "#D3D3D3";
+    }
 }
 
-function getWidth(squares){
-    return (650/squares)-.5;
-}
+function getHeight(squares){return (650/squares)-.5;}
+function getWidth(squares){return (650/squares)-.5;}
 
 drawGrid(size);
 
