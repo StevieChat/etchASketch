@@ -16,3 +16,25 @@ body{
     float: left;
     border: .25px solid black;
 }
+
+.buttonSection{
+    height:100px;
+    width: 650px;
+    position: relative;
+    top: 110px;
+    left: 200px;
+}
+
+.button{
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    background-color: white;
+    box-shadow: 2px 2px black;
+}
+
+#rightKnob{
+    position: relative;
+    bottom: 100px;
+    left: 550px;
+}
