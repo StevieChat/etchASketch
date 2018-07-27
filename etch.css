@@ -17,7 +17,7 @@ body{
     border: .25px solid black;
 }
 
-.buttonSection{
+.knobSection{
     height:100px;
     width: 650px;
     position: relative;
@@ -25,7 +25,7 @@ body{
     left: 200px;
 }
 
-.button{
+.knob{
     height: 100px;
     width: 100px;
     border-radius: 100%;
@@ -57,4 +57,21 @@ body{
     position: relative;
     bottom: 20px;
     left: 220px;
+}
+
+#resetBtn{
+    background-color: #E0A53B;
+    color: #A70606;
+    font-size: 100%;
+    height: 75px;
+    width: 75px;
+    position: relative;
+    bottom: 140px;
+    left: 550px;
+    border-radius: 50%;
+}
+
+#resetBtn:hover{
+    border: 3px solid white;
+    font-weight: bold;
 }
